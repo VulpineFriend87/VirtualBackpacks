@@ -1,0 +1,11 @@
+name: VirtualBackpacks
+version: '1.0'
+main: top.vulpine.virtualBackpacks.VirtualBackpacks
+api-version: '1.19'
+authors: [ VulpineFriend87 ]
+website: https://vulpine.top
+commands:
+  backpack:
+    description: Open your backpack
+    aliases: [pack]
+
