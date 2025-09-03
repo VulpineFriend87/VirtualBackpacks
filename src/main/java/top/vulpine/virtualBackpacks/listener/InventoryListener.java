@@ -20,7 +20,7 @@ public class InventoryListener implements Listener {
         if (!(event.getPlayer() instanceof Player player)) return;
 
         Backpack backpack = plugin.getBackpackManager().getBackpack(player.getUniqueId());
-        if (backpack == null || !event.getInventory().getHolder().equals(backpack)) return;
+        if (backpack == null || event.getInventory().getHolder() != null || !event.getInventory().getHolder().equals(backpack)) return;
 
         plugin.getBackpackManager().updateBackpack(backpack);
 
